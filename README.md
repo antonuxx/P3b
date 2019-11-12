@@ -12,31 +12,39 @@ externamente, mediante infinidad de tutoriales, guías y vídeos disponibles gra
 Para cargar los ficheros en su ordenador personal debe seguir los pasos siguientes:
 
 *	Abra una cuenta GitHub para gestionar esta y el resto de prácticas del curso.
-*	Cree un repositorio GitHub con el contenido inicial de la práctica:
-	*	Acceda a su página principal de GitHub pulsando sobre su icono personal en la parte superior
-		izquierda de cualquier página GitHub (debe estar identificado).
-	*	Pulse en el botón con el texto **New** que encontrará arriba a la izquierda.
-	*	Dele el nombre **P3**, deje las opciones por defecto y pulse en el botón al final de la página con
-		el texto **Create repository**.
-	*	En la página siguiente, de inicialización del repositorio, escoja la última opción, **Import code**,
-		introduzca la dirección del repositorio de la [Práctica 3](https://github.com/albino-pav/P3), y
-		pulse en el botón **Begin import**.
-	*	Después de unos segundos, el repositorio contendrá los ficheros originales de la práctica.
-*	En la página principal del repositorio, localice el botón **Branch: master** y úselo para crear una
-	rama nueva con los primeros apellidos de los integrantes del equipo de prácticas separados por guion.
-*	También en la página principal del repositorio, en la pestaña **Settings**, escoja la opción 
-	**Collaborators** y añada a su compañero de prácticas.
-	*	Éste recibirá un email solicitándole confirmación. Una vez confirmado, tanto él como el propietario
-		podrán gestionar el repositorio, por ejemplo: crear ramas en él o subir las modificaciones de su
-		directorio local de trabajo al repositorio GitHub usando el comando `git push ...`.
-*	Cada usuario del repositorio debe descargárselo en su ordenador con la orden `git clone
-	dirección-del-repositorio.git`.
+*	Cree un repositorio GitHub con el contenido inicial de la práctica (sólo debe hacerlo uno de los
+	integrantes del grupo de laboratorio, cuya página GitHub actuará de repositorio central):
+	-	Acceda la página de la [Práctica 3](https://github.com/albino-pav/P3).
+	-	En la parte superior derecha encontrará el botón `fork`. Apriételo y, después de unos segundos, se
+		creará en su cuenta GitHub un proyecto con el mismo nombre (**P3**). Si ya tuviera uno con ese 
+		nombre, se utilizará el nombre **P3-1**, y así sucesivamente.
+	-	Habilite al resto de miembros del grupo como *colaboradores* del proyecto; de este modo, podrán
+		subir sus modificaciones al repositorio central:
+		*	En la página principal del repositorio, en la pestaña **Settings**, escoja la opción 
+			**Collaborators** y añada a su compañero de prácticas.
+		*	Éste recibirá un email solicitándole confirmación. Una vez confirmado, tanto él como el
+			propietario podrán gestionar el repositorio, por ejemplo: crear ramas en él o subir las
+			modificaciones de su directorio local de trabajo al repositorio GitHub usando el comando
+			`git push origin ...`.
+	-	En la página principal del repositorio, localice el botón **Branch: master** y úselo para crear
+		una rama nueva con los primeros apellidos de los integrantes del equipo de prácticas separados por
+		guion (**fulano-mengano**).
+*	Todos los miembros del grupo deben realizar su copia local en su ordenador personal.
+	-	Copie la dirección de su copia del repositorio apretando en el botón **Clone or download**.
+		Asegúrese de usar *Clone with HTTPS*.
+	-	Abra una sesión de Bash en su ordenador personal y vaya al directorio **PAV**. Desde ahí, ejecute
+		`git clone dirección-del-fork-de-la-práctica`.
+	-	Vaya al directorio de la práctica `cd P3`.
+	-	Cambie a la rama **fulano-mengano** con la orden `git checkout fulano-mengano`.
 *	A partir de este momento, todos los miembros del grupo de prácticas pueden trabajar en su directorio
 	local del modo habitual.
-	*	También puede utilizar el repositorio remoto como repositorio central para el trabajo colaborativo
+	-	También puede utilizar el repositorio remoto como repositorio central para el trabajo colaborativo
 		de los distintos miembros del grupo de prácticas; o puede serle útil usarlo como copia de seguridad.
-	*	Al final de la práctica, la rama creada en el repositorio GitHub servirá para remitir la práctica
-		para su evaluación utilizando el mecanismo *pull request*.
+		*	Cada vez que quiera subir sus cambios locales al repositorio GitHub deberá confirmar los
+			cambios en su directorio local (`git add ...` seguido de `git commit -m "Mensaje del commit"`),
+			y, a continuación, subirlos con la orden `git push origin fulano-mengano`.
+	-	Al final de la práctica, la rama **fulano-mengano** del repositorio GitHub servirá para remitir la 
+		práctica para su evaluación utilizando el mecanismo *pull request*.
 
 ## Entrega de la práctica.
 
