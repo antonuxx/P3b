@@ -15,12 +15,12 @@ Para cargar los ficheros en su ordenador personal debe seguir los pasos siguient
 *	Cree un repositorio GitHub con el contenido inicial de la práctica (sólo debe hacerlo uno de los
 	integrantes del grupo de laboratorio, cuya página GitHub actuará de repositorio central):
 	-	Acceda la página de la [Práctica 3](https://github.com/albino-pav/P3).
-	-	En la parte superior derecha encontrará el botón `Fork`. Apriételo y, después de unos segundos, se
+	-	En la parte superior derecha encontrará el botón **`Fork`**. Apriételo y, después de unos segundos, se
 		creará en su cuenta GitHub un proyecto con el mismo nombre (**P3**). Si ya tuviera uno con ese 
 		nombre, se utilizará el nombre **P3-1**, y así sucesivamente.
 	-	Habilite al resto de miembros del grupo como *colaboradores* del proyecto; de este modo, podrán
 		subir sus modificaciones al repositorio central:
-		*	En la página principal del repositorio, en la pestaña **Settings**, escoja la opción 
+		*	En la página principal del repositorio, en la pestaña **:gear:`Settings`**, escoja la opción 
 			**Collaborators** y añada a su compañero de prácticas.
 		*	Éste recibirá un email solicitándole confirmación. Una vez confirmado, tanto él como el
 			propietario podrán gestionar el repositorio, por ejemplo: crear ramas en él o subir las
@@ -43,9 +43,10 @@ Para cargar los ficheros en su ordenador personal debe seguir los pasos siguient
 		*	Cada vez que quiera subir sus cambios locales al repositorio GitHub deberá confirmar los
 			cambios en su directorio local (`git add ...` seguido de `git commit -m "Mensaje del commit"`),
 			y, a continuación, subirlos con la orden `git push origin fulano-mengano`.
-	-	Al final de la práctica, la rama **fulano-mengano** del repositorio GitHub servirá para remitir la 
-		práctica para su evaluación utilizando el mecanismo *pull request*.
-
+*	Al final de la práctica, la rama **fulano-mengano** del repositorio GitHub servirá para remitir la práctica para su 
+	evaluación utilizando el mecanismo *pull request*.
+	-	Vaya a la página principal de la copia del repositorio y pulse en el botón **New pull request**, y
+		siga las instrucciones de GitHub.
 ## Entrega de la práctica.
 
 La entrega de la práctica se hará mediante _pull requests_. Conforme se acerque la fecha de entrega,
