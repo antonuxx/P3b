@@ -15,7 +15,7 @@ Para cargar los ficheros en su ordenador personal debe seguir los pasos siguient
 *	Cree un repositorio GitHub con el contenido inicial de la práctica (sólo debe hacerlo uno de los
 	integrantes del grupo de laboratorio, cuya página GitHub actuará de repositorio central):
 	-	Acceda la página de la [Práctica 3](https://github.com/albino-pav/P3).
-	-	En la parte superior derecha encontrará el botón `fork`. Apriételo y, después de unos segundos, se
+	-	En la parte superior derecha encontrará el botón `:Neptune: Fork`. Apriételo y, después de unos segundos, se
 		creará en su cuenta GitHub un proyecto con el mismo nombre (**P3**). Si ya tuviera uno con ese 
 		nombre, se utilizará el nombre **P3-1**, y así sucesivamente.
 	-	Habilite al resto de miembros del grupo como *colaboradores* del proyecto; de este modo, podrán
