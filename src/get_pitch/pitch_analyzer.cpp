@@ -9,9 +9,14 @@ using namespace std;
 /// Name space of UPC
 namespace upc {
   void PitchAnalyzer::autocorrelation(const vector<float> &x, vector<float> &r) const {
+    float sum = 0;
 
     for (unsigned int l = 0; l < r.size(); ++l) {
   		/// \TODO Compute the autocorrelation r[l]
+      for (unsigned int j = 0; j < x.size() - l; j++) {
+	    	sum += x[j] * x[j + l];
+	    }
+	    r[l] = sum / x.size();
     }
 
     if (r[0] == 0.0F) //to avoid log() and divide zero 
