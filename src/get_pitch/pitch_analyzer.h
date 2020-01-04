@@ -44,7 +44,7 @@ namespace upc {
 	///
 	/// Returns true is the frame is unvoiced
 	///
-    bool unvoiced(float pot, float r1norm, float rmaxnorm) const;
+    bool unvoiced(float r2max, float r1norm,float rmaxnorm, float zcr) const;
 
 
   public:
